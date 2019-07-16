@@ -1,0 +1,30 @@
+{
+    "name": "reddrake\/weather",
+    "description": "A weather SDK.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "reddrake",
+            "email": "eagleftf123@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.2",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Reddrake\\Weather\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Reddrake\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
